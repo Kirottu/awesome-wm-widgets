@@ -24,7 +24,9 @@ function widget.get_widget(widgets_args)
         {
             id = 'txt',
             font = font,
-            widget = wibox.widget.textbox
+            widget = wibox.widget.textbox,
+			forced_width = 30,
+			align = "center"
         },
         layout = wibox.layout.fixed.horizontal,
         set_volume_level = function(self, new_value)
